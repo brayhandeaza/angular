@@ -1,0 +1,11 @@
+<div class="container">
+    <app-header [hiddenHeader]="false"></app-header>
+    <div class="projects-container">
+        <div routerLink="{{project.link}}" class="projects" *ngFor="let project of projects">
+            <div class="icon-box">
+                <fa-icon [icon]="project.icon"></fa-icon>
+            </div>
+            <h3>{{project.name}}</h3>
+        </div>
+    </div>
+</div>

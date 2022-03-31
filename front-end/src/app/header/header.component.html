@@ -1,0 +1,17 @@
+<nav class="header navbar navbar-expand-lg">
+    <a routerLink="">Projects</a>
+    <section *ngIf="hiddenHeader" class="right-section">
+        <div class="button" (click)="handlePrint()">
+            <img src="../../assets/printer.png" alt="" srcset="">
+            <span>Print</span>
+        </div>
+        <div class="button" (click)="handleExport()">
+            <span>Export</span>
+            <img src="../../assets/down-arrow.png" alt="" srcset="">
+        </div>
+        <div class="button last" (click)="handleCreateOrder()">
+            <img src="../../assets/plus.png" alt="" srcset="">
+            <span>Create Order</span>
+        </div>
+    </section>
+</nav>

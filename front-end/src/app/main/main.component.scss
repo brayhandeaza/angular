@@ -1,0 +1,54 @@
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  .projects {
+    width: 300px;
+    height: 200px;
+    background: white;
+    border-radius: 25px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .icon-box {
+      width: 70px;
+      height: 70px;
+      background: white;
+      border-radius: 100%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
+        0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h3 {
+      padding-bottom: 5px;
+    }
+  }
+
+  :hover {
+    cursor: pointer;
+  }
+
+  button {
+    // width: 100px;
+    height: 50px;
+    margin: 10px;
+    padding: 0 20px;
+    border-radius: 20px;
+  }
+
+  :active {
+    opacity: 0.5;
+  }
+
+  .ng-fa-icon {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100% !important;
+}
+
+@media print {
+
+  .header,
+  app-footer,
+  ngb-pagination {
+    display: none !important;
+  }
+}
+
+
+
+@mixin flexBox($align, $justify, $direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+

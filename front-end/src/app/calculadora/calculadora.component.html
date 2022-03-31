@@ -1,0 +1,13 @@
+<div class="container">
+    <app-header [hiddenHeader]="false"></app-header>
+    <div class="center">
+        <div class="calculator">
+            <div class="result">
+                <span
+                    [style.font-size]="result.length > 8 ? '55px': result.length > 10 ? '40' : '70px'">{{numberWithCommas(result)}}</span>
+            </div>
+            <button (click)="handleOnClick($event)" name="{{button}}" id="{{(i == 16) ? 'zero' : ''}}"
+                class="{{handleLightButton(i)}}" *ngFor="let button of buttons; index as i">{{button}}</button>
+        </div>
+    </div>
+</div>

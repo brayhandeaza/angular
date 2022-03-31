@@ -1,0 +1,69 @@
+@import "/src/styles";
+
+
+.header {
+  width: 100%;
+  height: 85px;
+  background: tomato;
+
+  @include flexBox(center, space-between, row);
+
+
+
+  h1 {
+    font-size: 28px;
+    padding: 0 20px;
+  }
+
+  .right-section {
+    height: 100%;
+    padding: 0 20px;
+    @include flexBox(center, space-between, row);
+
+
+
+    .button {
+      padding: 0 15px;
+      height: 30px;
+      margin: 5px;
+      @include flexBox(center, flex-start, row);
+      background-color: aqua;
+
+      .ng-fa-icon {
+        font-size: 12px;
+      }
+
+      img {
+        width: 25px;
+        height: 25px;
+        padding: 5px;
+      }
+
+
+      background: white;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+
+      span {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+
+    }
+
+    .last {
+      background: rgb(84, 163, 84);
+      color: white;
+    }
+
+    :hover {
+      cursor: pointer;
+    }
+  }
+}
+
+label {
+  text-transform: capitalize;
+}
